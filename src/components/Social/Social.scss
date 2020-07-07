@@ -1,0 +1,67 @@
+.social {
+  margin-top: 30px;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    > svg {
+      width: 20px;
+      fill: currentColor;
+    }
+
+    &:hover {
+      color: #f6f8fa;
+      animation: animate ease 0.6s forwards;
+
+      &.GitHub {
+        background-color: #24292e;
+      }
+
+      &.LinkedIn {
+        background-color: #0077B5;
+      }
+
+      &.vk {
+        background-color: #4c75a3;
+      }
+
+      &.Twitter {
+        background-color: #55acee;
+      }
+    }
+  }
+}
+
+@keyframes animate {
+  0%, 20% {
+    transform: scale(1);
+    border-radius: 40px;
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+    border-radius: 10px;
+  }
+  60%, 100% {
+    transform: scale(1);
+    border-radius: 3px;
+  }
+}

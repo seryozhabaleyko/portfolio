@@ -1,0 +1,47 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  -moz-transition: -moz-transform .45s cubic-bezier(.45,0,0,1);
+  -o-transition: -o-transform .45s cubic-bezier(.45,0,0,1);
+  -webkit-transition: -webkit-transform .45s cubic-bezier(.45,0,0,1);
+  transition: transform .45s cubic-bezier(.45,0,0,1);
+
+  -moz-transform: translate3d(0,-100%,0);
+  -ms-transform: translate3d(0,-100%,0);
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+
+  &.open {
+    transform: none;
+  }
+
+  > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    width: 200px;
+    height: calc(100% / 4);
+
+    font-size: 1.4em;
+
+    color: #5a5a5a;
+    background-color: rgba(0,0,0,.02);
+
+    transition: transform .55s cubic-bezier(0,.35,0,1),color .15s ease-out .1s;
+
+    &:hover {
+      color: #7f7f7f;
+    }
+  }
+}

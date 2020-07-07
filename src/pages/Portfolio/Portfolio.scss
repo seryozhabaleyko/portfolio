@@ -1,0 +1,17 @@
+.portfolio {
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+  width: 100% !important;
+  height: 100% !important;
+
+  &-heading {
+    text-align: center;
+    color: #fff;
+  }
+
+  &-title {
+    margin: 0;
+    font-size: 50px;
+    text-shadow: 2px 2px 0 rgba(0,0,0,.15);
+  }
+}
